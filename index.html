@@ -50,23 +50,14 @@
                 <h1 class="text-center">Hard Rock Lyric Search</h1>
                 <div class="search-box my-5">
                     <input type="text" class="form-control" placeholder="Enter your artist song name" id="search-key">
-                    <button class="btn btn-success search-btn" id="search-lyrics">Search</button>
+                    <button class="btn btn-success search-btn" onclick="searchSongs()">Search</button>
                 </div>
             </div>
             <!-- Single Lyrics -->
             <div class="single-lyrics text-center" id="single-lyrics">
 
             </div>
-            <div class="search-result col-md-8 mx-auto py-4 d-none">
-                <div class="single-result row align-items-center my-3 p-3">
-                    <div class="col-md-9">
-                        <h3 class="lyrics-name" id="lyrics-name" >Purple Noon</h3>
-                        <p class="author lead">Album by <span id="artist-name">Washed Out</span></p>
-                    </div>
-                    <div class="col-md-3 text-md-right text-center">
-                        <button class="btn btn-success" id="get-lyrics" >Get Lyrics</button>
-                    </div>
-                </div>
+            <div class="search-result col-md-8 mx-auto py-4" id="songContainer">
             </div>
         </main>
     </div>

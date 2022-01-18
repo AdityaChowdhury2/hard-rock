@@ -44,7 +44,9 @@ const getLyrics = (artistName, title) => {
         .then(res => res.json())
         .then(lyrics => {
             if (lyrics.lyrics !== undefined) {
-                document.getElementById('single-lyrics').innerText = lyrics.lyrics;
+                const showLyrics = document.getElementById('single-lyrics');
+                showLyrics.classList = 'single-lyrics text-center';
+                showLyrics.innerText = lyrics.lyrics;
             }
             else {
                 displayError('Cannot Get Any Lyrics');
